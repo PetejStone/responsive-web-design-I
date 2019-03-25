@@ -253,7 +253,7 @@ main {
     }
   }
 
-@media(max-width: 800px) {
+@media(max-width: 500px) {
   .section-bottom {
     flex-direction: column;
     }
@@ -286,7 +286,7 @@ main {
   }
 }
 .section-bottom-content {
- width: 30%;
+ width: 25%;
 }
 
 @media(max-width: 500px) {
