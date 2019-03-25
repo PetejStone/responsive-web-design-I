@@ -67,7 +67,17 @@ h1, h2, h3, h4, h5 {
 
 body {
  margin: 24px 67px;
+}
+@media(max-width: 800px){
+  body {
+   margin: 24px 20px;
+  }
+}
 
+@media(max-width: 500px){
+  body {
+   margin: 24px 8px;
+  }
 }
 
 img {
@@ -88,6 +98,24 @@ button {
  flex-wrap: wrap-reverse;
 }
 
+@media(max-width: 800px) {
+  .navigation {
+    height: 7em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+	.navigation img{
+		display: none;
+	}
+}
+
+@media(max-width: 500px) {
+  .navigation {
+    height: 29em;
+  }
+}
+
 nav {
  display: flex;
  justify-content: space-between;
@@ -96,17 +124,44 @@ nav {
  width: 71%;
 }
 
+@media(max-width: 800px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media(max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    padding: 28px 0px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .logo {
  align-self: center;
  padding: 5px;
+}
+
+@media(max-width: 800px) {
+  .logo {
+    margin: 0 auto;
+  }
 }
 
 nav a,
 footer a {
  text-decoration: none;
  color: #DDDDDD;
- padding: 5px;
-
  transition: all .3s;
 
 }
@@ -131,7 +186,16 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 4em;
 }
+
+@media(max-width: 800px) {
+  .header-content img {
+    display: none;
+  }
+}
+
+
 
 .heading {
   display: flex;
@@ -179,9 +243,21 @@ main {
   display: flex;
   justify-content: space;
   justify-content: space-between;
-  margin: 37px 0;
+  margin: 28px 0;
   flex-wrap: wrap;
 }
+
+@media(max-width: 800px) {
+  .section-bottom {
+    padding-bottom: 30px;
+    }
+  }
+
+@media(max-width: 800px) {
+  .section-bottom {
+    flex-direction: column;
+    }
+  }
 
 .section-bottom::after {
  border-bottom: 1px solid black;
@@ -193,14 +269,30 @@ main {
  margin: 10px;
 
 }
+
 .section-top-content {
  width: 40%;
-
-
 }
 
+@media(max-width: 800px) {
+  .section-top-content {
+   width: 47%;
+  }
+}
+
+@media(max-width: 800px) {
+  .section-top-content {
+   width: 90%;
+  }
+}
 .section-bottom-content {
  width: 30%;
+}
+
+@media(max-width: 500px) {
+  .section-bottom-content {
+   width: 90%;
+  }
 }
 
 .contact {
